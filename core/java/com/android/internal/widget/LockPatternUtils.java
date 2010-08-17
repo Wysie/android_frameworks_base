@@ -605,6 +605,14 @@ public class LockPatternUtils {
         return getString(Settings.Secure.LOCK_CUSTOM_MSG);
     }
     
+    public void setCustomMsgColor(int color) {
+        setInt(Settings.Secure.CUSTOM_MSG_COLOR, color);
+    }
+    
+    public int getCustomMsgColor() {
+        return getInt(Settings.Secure.CUSTOM_MSG_COLOR, -1);
+    }
+    
     public int getIncorrectDelay() {
         return getInt(Settings.Secure.LOCK_INCORRECT_DELAY, 2000);
     }
